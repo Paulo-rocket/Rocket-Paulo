@@ -4,10 +4,10 @@ package org.firstinspires.ftc.teamcode;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
 @TeleOp(name="RocketPaulo", group="Linear OpMode")
-
 public class RocketPaulo extends LinearOpMode {
 
   private ElapsedTime runtime = new ElapsedTime();
@@ -24,10 +24,10 @@ public void runOpMode() {
     BL2 = hardwareMap.get(DcMotor.class, "BL2");
     BR3 = hardwareMap.get(DcMotor.class, "BR3");
 
-    FL0.setDirection(DcMotor.Direction.REVERSE);
+    FL0.setDirection(DcMotor.Direction.FORWARD);
     FR1.setDirection(DcMotor.Direction.REVERSE);
     BL2.setDirection(DcMotor.Direction.FORWARD);
-    BR3.setDirection(DcMotor.Direction.FORWARD);
+    BR3.setDirection(DcMotor.Direction.REVERSE);
 
     telemetry.addData("Status","Initialized");
     telemetry.update();
