@@ -6,7 +6,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
-@TeleOp(name="RocketPaulo", group="Linear Opmode")
+@TeleOp(name="RocketPaulo", group="Linear OpMode")
 
 public class RocketPaulo extends LinearOpMode {
 
@@ -73,4 +73,5 @@ public void runOpMode() {
 
 
 
-  }}
+  }
+}
